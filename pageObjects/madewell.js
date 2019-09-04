@@ -20,7 +20,7 @@ module.exports = {
         },
         accessoriesCate: {
             selector: '//span[text()="Accessories"]',
-            locatestrategy: 'xpath'
+            locateStrategy: 'xpath'
         },
         lifeCate: {
             selector: '//span[text()="Life"]',
@@ -75,10 +75,11 @@ module.exports = {
             locateStrategy: 'xpath'
         },
         sizeSelect: {
-            selector: '//a[@title="Select Size: 0"]',
+            selector: '(//*[@class="swatches size"])//*[2]',
             locateStrategy: 'xpath'
         },
         addToBag: '#add-to-cart',
+        addToBagDisabled: '.add-to-cart-disabled',
         cartIcon: {
             selector: '//a[@title="My bag"]',
             locateStrategy: 'xpath'
